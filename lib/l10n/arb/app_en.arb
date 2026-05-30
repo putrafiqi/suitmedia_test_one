@@ -1,3 +1,39 @@
 {
-    "@@locale": "en"
+    "@@locale": "en",
+    "nameCannotBeEmpty": "Name cannot be empty",
+    "@nameCannotBeEmpty": {},
+    "nameMustBeAtLeast2Characters": "Name must be at least 2 characters",
+    "@nameMustBeAtLeast2Characters": {},
+    "enterYourName": "Enter your name",
+    "@enterYourName": {},
+    "enterPhrase": "Enter a word or phrase",
+    "@enterPhrase": {},
+    "phraseCannotBeEmpty": "Phrase cannot be empty",
+    "@phraseCannotBeEmpty": {},
+    "phraseMustBeAtLeast2Characters": "Phrase must be at least 2 characters",
+    "@phraseMustBeAtLeast2Characters": {},
+    "checkPalindromeBtn": "Check Palindrome",
+    "@checkPalindromeBtn": {},
+    "nextBtn": "Next",
+    "@nextBtn": {},
+    "palindromeResultTitle": "Palindrome Result",
+    "@palindromeResultTitle": {},
+    "palindromeResultMessage": "Congratulations {name}, your sentence is a palindrome!",
+    "@palindromeResultMessage": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "notPalindromeResultMessage": "Sorry {name}, your sentence is not a palindrome.",
+    "@notPalindromeResultMessage": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "okBtn": "OK",
+    "@okBtn": {}
 }
