@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/widgets.dart';
 
 class AppBlocObserver extends BlocObserver {
@@ -20,14 +21,22 @@ class AppBlocObserver extends BlocObserver {
   }
 }
 
-Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+Future<void> bootstrap(FutureOr<Widget> Function(Dio dio) builder) async {
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
   Bloc.observer = const AppBlocObserver();
 
-  // Add cross-flavor configuration here
+  final dio = Dio()
+    ..options = BaseOptions(
+      connectTimeout: const Duration(seconds: 5),
+      receiveTimeout: const Duration(seconds: 5),
+      headers: {
+        'x-api-key': const String.fromEnvironment('API_KEY'),
+      },
+      baseUrl: 'https://reqres.in/api',
+    );
 
-  runApp(await builder());
+  runApp(await builder(dio));
 }

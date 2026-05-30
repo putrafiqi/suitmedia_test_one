@@ -1,3 +1,21 @@
 {
-    "@@locale": "id"
+    "@@locale": "id",
+    "nameCannotBeEmpty": "Nama tidak boleh kosong",
+    "nameMustBeAtLeast2Characters": "Nama minimal harus 2 karakter",
+    "enterYourName": "Masukkan nama Anda",
+    "enterPhrase": "Masukkan kata atau kalimat",
+    "phraseCannotBeEmpty": "Kalimat tidak boleh kosong",
+    "phraseMustBeAtLeast2Characters": "Kalimat minimal harus 2 karakter",
+    "checkPalindromeBtn": "Cek Palindrom",
+    "nextBtn": "Selanjutnya",
+    "palindromeResultTitle": "Hasil Palindrom",
+    "palindromeResultMessage": "Selamat {name}, kalimat Anda adalah palindrom.",
+    "notPalindromeResultMessage": "Maaf {name}, kalimat Anda bukan palindrom.",
+    "okBtn": "Ok",
+    "welcome": "Selamat Datang",
+    "userListTitle": "Daftar Pengguna",
+    "settingsTitle": "Pengaturan",
+    "chooseAUserBtn": "Pilih Pengguna",
+    "somethingWentWrong": "Terjadi kesalahan, silakan coba lagi.",
+    "noUsers": "Pengguna tidak ditemukan."
 }

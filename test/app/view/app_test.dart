@@ -1,14 +1,19 @@
 // Ignore for testing purposes
-// ignore_for_file: prefer_const_constructors
 
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:suitmedia_test_one/app/app.dart';
 
 void main() {
   group('App', () {
-    testWidgets('renders Hello World text', (tester) async {
-      await tester.pumpWidget(App());
-      expect(find.text('Hello World'), findsOneWidget);
+    late Dio dio;
+    setUp(() {
+      dio = Dio();
+    });
+    testWidgets('renders MaterialApp', (tester) async {
+      await tester.pumpWidget(App(dio: dio));
+      expect(find.byType(MaterialApp), findsOneWidget);
     });
   });
 }
