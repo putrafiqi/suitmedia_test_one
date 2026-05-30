@@ -9,7 +9,13 @@
     "checkPalindromeBtn": "Cek Palindrom",
     "nextBtn": "Selanjutnya",
     "palindromeResultTitle": "Hasil Palindrom",
-    "palindromeResultMessage": "Selamat {name}, kalimat Anda adalah palindrom!",
+    "palindromeResultMessage": "Selamat {name}, kalimat Anda adalah palindrom.",
     "notPalindromeResultMessage": "Maaf {name}, kalimat Anda bukan palindrom.",
-    "okBtn": "OK"
+    "okBtn": "Ok",
+    "welcome": "Selamat Datang",
+    "userListTitle": "Daftar Pengguna",
+    "settingsTitle": "Pengaturan",
+    "chooseAUserBtn": "Pilih Pengguna",
+    "somethingWentWrong": "Terjadi kesalahan, silakan coba lagi.",
+    "noUsers": "Pengguna tidak ditemukan."
 }

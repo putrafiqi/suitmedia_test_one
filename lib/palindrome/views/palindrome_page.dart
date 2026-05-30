@@ -7,6 +7,7 @@ import 'package:remixicon/remixicon.dart';
 import 'package:suitmedia_test_one/l10n/l10n.dart';
 import 'package:suitmedia_test_one/palindrome/bloc/palindrome_bloc.dart';
 import 'package:suitmedia_test_one/palindrome/views/palindrome_form.dart';
+import 'package:suitmedia_test_one/settings/settings.dart';
 
 class PalindromePage extends StatelessWidget {
   const PalindromePage({super.key});
@@ -86,7 +87,19 @@ class _PalindromeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    unawaited(
+                      Navigator.of(context).push(
+                        SettingsPage.route(
+                          name: context
+                              .read<PalindromeBloc>()
+                              .state
+                              .nameInput
+                              .value,
+                        ),
+                      ),
+                    );
+                  },
                   child: Text(l10n.nextBtn),
                 ),
               ],
