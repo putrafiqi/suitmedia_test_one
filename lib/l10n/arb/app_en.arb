@@ -18,7 +18,7 @@
     "@nextBtn": {},
     "palindromeResultTitle": "Palindrome Result",
     "@palindromeResultTitle": {},
-    "palindromeResultMessage": "Congratulations {name}, your sentence is a palindrome!",
+    "palindromeResultMessage": "Congratulations {name}, your sentence is a palindrome.",
     "@palindromeResultMessage": {
         "placeholders": {
             "name": {
@@ -34,6 +34,18 @@
             }
         }
     },
-    "okBtn": "OK",
-    "@okBtn": {}
+    "okBtn": "Ok",
+    "@okBtn": {},
+    "welcome": "Welcome",
+    "@welcome": {},
+    "userListTitle": "User List",
+    "@userListTitle": {},
+    "settingsTitle": "Settings",
+    "@settingsTitle": {},
+    "chooseAUserBtn": "Choose a User",
+    "@chooseAUserBtn": {},
+    "somethingWentWrong": "Something went wrong, please try again.",
+    "@somethingWentWrong": {},
+    "noUsers": "No users found.",
+    "@noUsers": {}
 }
