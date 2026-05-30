@@ -12,6 +12,12 @@ A Very Good Project created by Very Good CLI.
 
 ## Getting Started 🚀
 
+Before running the project, make sure to copy the `.env.example` file to `.env`:
+
+```sh
+cp .env.example .env
+```
+
 This project contains 3 flavors:
 
 - development
